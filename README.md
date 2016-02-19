@@ -55,7 +55,7 @@ After that, go to https://app.scrapinghub.com and run your crawler.
 
 Go to the folder
 
-  ./roku-app/
+    ./roku-app/
 
 and zip everything. Then you can upload the zip to Roku TV.
 
