@@ -59,7 +59,7 @@ Go to the folder
 
 and zip everything. Then you can upload the zip to Roku TV.
 
-# TL;TD
+# TL;DR
 
 ## spider_no_thumbnail
 
