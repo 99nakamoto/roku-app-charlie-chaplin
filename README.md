@@ -36,7 +36,7 @@ A manual way to do this, is to:
   
 1. update this file like this:
 
-  paste your json file in the middle
+paste your json file in the middle
 
     {"Videos":
     [your output.json here]
