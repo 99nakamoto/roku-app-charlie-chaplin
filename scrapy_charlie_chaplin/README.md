@@ -1,6 +1,6 @@
 # Scrapy tutorial 
 
-Using scrapy_charlie_chaplin as an example. 
+Using __scrapy_charlie_chaplin__ as an example. 
 
     scrapy startproject scrapy_charlie_chaplin
     cd scrapy_charlie_chaplin/
@@ -91,7 +91,7 @@ This is my parsing function:
 
 And check the result by running:
 
-  scrapy crawl archive_charlie -o charlie.json
+    scrapy crawl archive_charlie -o charlie.json
 
 The logging from terminal looks like this:
 
@@ -110,7 +110,8 @@ The logging from terminal looks like this:
 Now we've finished the crawling of raw data. Next step, we need to process the raw data using pipeline.
 
 # Pipeline
-http://doc.scrapy.org/en/latest/topics/item-pipeline.html
+
+Read: http://doc.scrapy.org/en/latest/topics/item-pipeline.html
 
 Implement process_item(self, item, spider) function to only keep the clean and useful data.
 http://doc.scrapy.org/en/latest/topics/item-pipeline.html#process_item
@@ -157,4 +158,3 @@ Finally, the crawler is ready. The result looks like this:
     {"date": "on 9/14/2014", "video_format": "mp4", "description": "japanese make up artist extra ordinaire so much that ramsa from tokyo commisioned carlito paquito aka av guy at the world famous comedy store, you know mitzi shore's place on sunset blvd took photos of him. wow. who cares?\n", "video_url": "https://archive.org/download/funny_or_die_video_602d891174/funny_or_die_video_602d891174.mp4", "title": "Funny or Die Video 602d891174: bruce lee and jet li equals jackie chan equals charlie chaplin it's cool"},
     {"date": "on 10/10/2014", "video_format": "mp4", "description": "", "video_url": "https://archive.org/download/CharlieChaplinInCharlieShanghaiedAppleTV/Charlie Chaplin in Charlie Shanghaied - Apple TV.mp4", "title": "Charlie Chaplin In Charlie Shanghaied"},
     {"date": "on 10/7/2014", "video_format": "mp4", "description": "Charlie Chaplin meets Sergio Leone in this silent comedy short by Don Ford and David Schuttenhelm.\n", "video_url": "https://archive.org/download/funny_or_die_video_216de054ef/funny_or_die_video_216de054ef.mp4", "title": "Funny or Die Video 216de054ef: A Fistful of Dollar"},
-

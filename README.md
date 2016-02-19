@@ -1,3 +1,7 @@
+# If you are looking for a crawler tutorial
+
+Read https://github.com/michaelran16/roku-app-charlie-chaplin/tree/master/scrapy_charlie_chaplin
+
 # How to run the spider crawler
 
 Use spider_no_thumbnail:
