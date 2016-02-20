@@ -28,15 +28,15 @@ The Roku app will read data from: http://45.55.239.146/sample.json which look li
 
 A manual way to do this, is to:
 
-1. log into 45.55.239.146 which is my personal server
+1. log into my personal server
 
 1. locate your www folder and open up sample.json
 
-  sudo vi /var/www/html/sample.json
+    sudo vi /var/www/html/sample.json
   
 1. update this file like this:
 
-paste your json file in the middle
+  paste your json file in the middle
 
     {"Videos":
     [your output.json here]
