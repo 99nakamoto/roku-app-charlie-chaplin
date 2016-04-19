@@ -1,3 +1,7 @@
+# If you are looking for Roku app tutorial
+
+Read https://github.com/michaelran16/roku-app-charlie-chaplin
+
 # Scrapy tutorial 
 
 Using __scrapy_charlie_chaplin__ as an example. 
