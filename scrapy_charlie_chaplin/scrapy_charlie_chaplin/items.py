@@ -13,5 +13,5 @@ class ScrapyCharlieChaplinItem(scrapy.Item):
     description = scrapy.Field()
     date = scrapy.Field()
     video_url = scrapy.Field()
-    video_type = scrapy.Field()
+    video_format = scrapy.Field()
     thumbnail = scrapy.Field()
