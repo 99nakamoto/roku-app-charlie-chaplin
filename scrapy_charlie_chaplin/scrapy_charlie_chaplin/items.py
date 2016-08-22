@@ -9,6 +9,9 @@ import scrapy
 
 
 class ScrapyCharlieChaplinItem(scrapy.Item):
-    # define the fields for your item here like:
-    # name = scrapy.Field()
-    pass
+    title = scrapy.Field()
+    description = scrapy.Field()
+    date = scrapy.Field()
+    video_url = scrapy.Field()
+    video_type = scrapy.Field()
+    thumbnail = scrapy.Field()
