@@ -8,3 +8,5 @@ scrapy_charlie_chaplin/project.egg-info/*
 scrapy_charlie_chaplin/build/*
 
 xml_data/*
+
+scrapy_charlie_chaplin/output.json
