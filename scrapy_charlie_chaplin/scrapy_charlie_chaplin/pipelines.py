@@ -31,6 +31,10 @@ class ScrapyCharlieChaplinPipeline(object):
             else:
               item['video_url'] = one_url
             break
+        
+        # set the thumbnail url
+        if (item['thumbnail'].startswith('/')):
+              item['thumbnail'] = 'https://archive.org' + item['thumbnail']
 
         # 3 fields are required: title, video_format and video_url
         if not item['title'] or not item['video_format'] or not item['video_url']:
