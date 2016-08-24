@@ -158,8 +158,8 @@ Function ReadJsonAndParse()
         item.title = video.title
         item.url = video.video_url
         item.description = video.description
-        item.streamFormat = "mp4"
-        item.HDPosterUrl = "http://investorsconundrum.com/wp-content/uploads/2008/02/charlie_chaplin_04.jpg"
+        item.streamFormat = video.video_format
+        item.HDPosterUrl = video.thumbnail
         item.hdBackgroundImageUrl = video.thumbnail
         
         result.push(item)
