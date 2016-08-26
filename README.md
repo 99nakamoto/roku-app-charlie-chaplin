@@ -2,8 +2,8 @@
 
 The old crawler:
 
-    cd scrapy_charlie_chaplin/
-    scrapy crawl archive_charlie -o output.json
+  cd scrapy_charlie_chaplin/
+  scrapy crawl archive_charlie -o output.json
 
 The new crawler with thumbnail: 
 
@@ -14,12 +14,16 @@ The new crawler with thumbnail:
 
 The Roku app will read data from: http://45.55.239.146/sample.json which look like this:
 
-    {"Videos":
-        ...some json format data...
-        [{}, {}, {}]
-        ...some json format data...
-    }
+  {"Videos":
+    ...some json format data...
+    [{}, {}, {}]
+    ...some json format data...
+  }
 
 # How to test the Roku app
 
-Go to ./roku-app/ folder and zip everything, then you can upload the zip to Roku TV.
+Go to the folder
+
+  ./roku-app/
+
+and zip everything. Then you can upload the zip to Roku TV.
