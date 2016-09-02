@@ -42,7 +42,7 @@ class ArchiveCharlieThumbnailSpider(scrapy.Spider):
         item = response.meta['item']
         
         item['title'] = response.xpath('//div[@class="relative-row row"]/div/h1/text()').extract()
-        # if description does not exist, return
+        # if title does not exist, return no item
         if (not item['title']):
           return
         else:

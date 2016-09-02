@@ -7,7 +7,6 @@ class ScrapyCharlieChaplinPipeline(object):
     def process_item(self, item, spider):
 
         # get clean title
-        # TODO, get the correct title instead of doing this
         item['title'] = item['title'][1].strip();
 
         # For description, remove empty line breaks, pre- and post-spaces
