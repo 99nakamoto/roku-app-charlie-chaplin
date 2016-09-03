@@ -4,8 +4,6 @@ import scrapy
 from scrapy_charlie_chaplin.items import ScrapyCharlieChaplinItem
 
 
-# this is a duplicate of the ArchiveCharlieSpider
-# I will investigate how to use Request.meta attribute to pass in addtional data
 class ArchiveCharlieThumbnailSpider(scrapy.Spider):
     name = "archive_charlie_thumbnail"
     allowed_domains = ["archive.org"]

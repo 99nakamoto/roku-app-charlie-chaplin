@@ -1,13 +1,14 @@
 # -*- coding: utf-8 -*-
 import scrapy
+
 from scrapy.spiders import CrawlSpider, Rule
 from scrapy.linkextractors import LinkExtractor
 
 from scrapy_charlie_chaplin.items import ScrapyCharlieChaplinItem
 
 
-class ArchiveCharlieSpider(CrawlSpider):
-    name = "archive_charlie"
+class SpiderNoThumbnail(CrawlSpider):
+    name = "spider_no_thumbnail"
     allowed_domains = ["archive.org"]
     start_urls = (
         'https://archive.org/search.php?query=subject%3A%22Charlie+Chaplin%22&and%5B%5D=mediatype%3A%22movies%22',
