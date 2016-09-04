@@ -4,6 +4,7 @@ import scrapy
 from scrapy_charlie_chaplin.items import ScrapyCharlieChaplinItem
 
 
+# TODO add documentation
 class ArchiveCharlieThumbnailSpider(scrapy.Spider):
     name = "archive_charlie_thumbnail"
     allowed_domains = ["archive.org"]

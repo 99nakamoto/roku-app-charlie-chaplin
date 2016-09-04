@@ -10,7 +10,7 @@ The new crawler with thumbnail:
     cd scrapy_charlie_chaplin/
     scrapy crawl archive_charlie_thumbnail -o output.json
 
-Or
+Or:
 
     cd scrapy_charlie_chaplin/
     scrapy crawl spider_no_thumbnail -o output.json

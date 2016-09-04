@@ -7,6 +7,7 @@ from scrapy.linkextractors import LinkExtractor
 from scrapy_charlie_chaplin.items import ScrapyCharlieChaplinItem
 
 
+# TODO add documentation
 class SpiderNoThumbnail(CrawlSpider):
     name = "spider_no_thumbnail"
     allowed_domains = ["archive.org"]
