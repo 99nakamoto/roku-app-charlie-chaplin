@@ -42,8 +42,11 @@ class SpiderNoThumbnail(CrawlSpider):
           item['description'] = response.xpath('//div[@class="relative-row row"]/div/div[@id="descript"]/p/text()').extract()
 
         item['date'] = response.xpath('//div[@class="relative-row row"]/div/div[@class="boxy"]/div[@class="boxy-ttl"]/text()').extract()
+        
         item['video_url'] = response.xpath('//div[@class="relative-row row"]/div/div[@class="boxy quick-down"]/div[@class="format-group"]/a[@class="format-summary download-pill"]/@href').extract()
         if (not item['video_url']):
           return
+    
+        item['thumbnail'] = ''
 
         return item
