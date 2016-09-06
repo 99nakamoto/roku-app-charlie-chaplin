@@ -8,7 +8,7 @@ The old crawler:
 The new crawler with thumbnail: 
 
     cd scrapy_charlie_chaplin/
-    scrapy crawl archive_charlie_thumbnail -o output.json
+    scrapy crawl spider_with_thumbnail -o output.json
 
 Or:
 

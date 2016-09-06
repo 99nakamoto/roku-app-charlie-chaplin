@@ -5,8 +5,8 @@ from scrapy_charlie_chaplin.items import ScrapyCharlieChaplinItem
 
 
 # TODO add documentation
-class ArchiveCharlieThumbnailSpider(scrapy.Spider):
-    name = "archive_charlie_thumbnail"
+class SpiderWithThumbnail(scrapy.Spider):
+    name = "spider_with_thumbnail"
     allowed_domains = ["archive.org"]
     start_urls = (
         'https://archive.org/search.php?query=subject%3A%22Charlie+Chaplin%22&and%5B%5D=mediatype%3A%22movies%22',
