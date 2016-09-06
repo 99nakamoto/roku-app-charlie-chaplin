@@ -7,7 +7,17 @@ from scrapy.linkextractors import LinkExtractor
 from scrapy_charlie_chaplin.items import ScrapyCharlieChaplinItem
 
 
-# TODO add documentation
+# spider_no_thumbnail
+# extends CrawlSpider
+
+# Given 1 start_urls, rules, and parse_item() function
+# The crawler will apply and follow the rules to open up all 
+# Item Pages, and use parse_item() to crawl all data needed for 
+# an item. 
+
+# This would not give up thumbnail because thumbnail is only 
+# present in the Item List Page, not the Item Page itself. 
+
 class SpiderNoThumbnail(CrawlSpider):
     name = "spider_no_thumbnail"
     allowed_domains = ["archive.org"]

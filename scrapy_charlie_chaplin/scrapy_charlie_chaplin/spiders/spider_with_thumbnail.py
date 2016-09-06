@@ -4,7 +4,24 @@ import scrapy
 from scrapy_charlie_chaplin.items import ScrapyCharlieChaplinItem
 
 
-# TODO add documentation
+# spider_with_thumbnail
+# extends scrapy.Spider
+# 
+# Given multiple start_urls, 1 default parse() function, 
+# and 1 customized parse_item() function
+# The crawler will first use parse() function to process the 
+# Item List, then use callback parse_item() function to 
+# process the Item Page. 
+#
+# parse() is auto invoked by the crawler, and parse_item() 
+# is always invoked from inside parse() function. 
+# 
+# Most important is the use of request.meta, which passes in 
+# thumbnail to the request from Item List Page, to the 
+# parse_item() function
+#
+# i.e. this code: request.meta['item'] = item
+
 class SpiderWithThumbnail(scrapy.Spider):
     name = "spider_with_thumbnail"
     allowed_domains = ["archive.org"]
