@@ -1,0 +1,8 @@
+# customized by me
+scrapy_charlie_chaplin/scrapinghub.yml
+
+scrapy_charlie_chaplin/project.egg-info/*
+
+scrapy_charlie_chaplin/build/*
+
+xml_data/*
