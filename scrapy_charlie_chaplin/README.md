@@ -1,14 +1,22 @@
-Scrapy
+# Scrapy tutorial 
+
+Using scrapy_charlie_chaplin as an example. 
 
     scrapy startproject scrapy_charlie_chaplin
     cd scrapy_charlie_chaplin/
     scrapy genspider archive_charlie archive.org
 
-Target website: https://archive.org/search.php?query=subject%3A%22Charlie+Chaplin%22&and%5B%5D=mediatype%3A%22movies%22
+Target website: 
 
-Criteria: any video that contains the keyword 'chaplin'
+> https://archive.org/search.php?query=subject%3A%22Charlie+Chaplin%22&and%5B%5D=mediatype%3A%22movies%22
 
-Data Model: title, date, description, video_url, thumbnail_url
+Criteria: 
+
+> any video that contains the keyword 'chaplin'
+
+Data Model: 
+
+> title, date, description, video_url, thumbnail_url
 
 # Defining our Item
 http://doc.scrapy.org/en/latest/intro/tutorial.html#defining-our-item
@@ -28,10 +36,10 @@ http://doc.scrapy.org/en/latest/intro/tutorial.html#defining-our-item
 
 Important:
 
-start_urls
-rules
+1. start_urls
+1. rules
 
-look like this:
+which looks like this:
 
     class ArchiveCharlieSpider(CrawlSpider):
       name = "archive_charlie"
